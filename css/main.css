@@ -1,0 +1,173 @@
+body {
+  background-image: url("/Images/abstract.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins';
+  margin: 0;
+  overflow: hidden;
+}
+
+.heroimage {
+  padding: 0;
+  margin: auto auto -1em auto;
+  height: 100%;
+}
+
+.container {
+  display: block;
+  height: calc(100vh - 15em);
+  background: rgba(162, 185, 188, 0.03);
+  margin: 4em 4em 4em 4em;
+  padding: 3em;
+  border-radius: 3em;
+  position: relative;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  -webkit-box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+          box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+
+.container h2 {
+  color: #878f99;
+  font-size: 1.7em;
+  font-family: 'Lora', serif;
+}
+
+.container h1, .container h2 {
+  margin: 0;
+  font-family: 'Lora', serif;
+}
+
+.container p {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+
+.container .oi {
+  color: #12E9B6;
+  line-height: 2em;
+  width: 1.5em;
+  padding-left: 4em;
+}
+
+.container .container {
+  width: auto;
+  height: 60%;
+}
+
+.container .mainpanel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+  height: 100%;
+}
+
+.container .mainpanel .leftpanel {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  place-items: center;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.container .mainpanel .leftpanel .welcometext {
+  max-width: 70%;
+}
+
+.container .mainpanel .leftpanel .welcometext .name {
+  display: flexbox;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .mainpanel .leftpanel .welcometext .name h1 {
+  font-size: 4em;
+  text-align: left;
+  color: #12E9B6;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.container .mainpanel .leftpanel .welcometext .name .surname {
+  padding-top: 0;
+  margin-top: 0;
+  padding-left: 1em;
+  line-height: 1em;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(243, 193, 41, 0.7);
+}
+
+.container .mainpanel .leftpanel .welcometext p {
+  text-align: left;
+  color: #878f99;
+}
+
+.container .mainpanel .leftpanel .welcometext .copy {
+  overflow-wrap: vertical;
+}
+
+.container .mainpanel .leftpanel .welcometext .contactblock {
+  margin: 1.5em 0;
+  text-align: left;
+  color: #878f99;
+}
+
+.container .mainpanel .leftpanel .welcometext .contacttext {
+  color: white;
+  padding-left: 2em;
+}
+
+.container .mainpanel .rightpanel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  place-content: bottom;
+  background-image: url("../Images/image.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container .mainpanel .rightpanel .textpanel {
+  margin: auto auto 0 auto;
+  padding: 2em;
+  width: 40%;
+  text-align: center;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+          box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+
+.container .mainpanel .rightpanel .textpanel .label {
+  color: white;
+  font-size: 2em;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .footertext {
+  text-align: center;
+  color: #878f99;
+  padding: 3em;
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */

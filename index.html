@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Merriweather:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <title>Arabella's Contact Card</title>
+
+</head>
+
+<body>
+    <!-- <img src="abstract.jpg" alt="abstract background"> -->
+    <!-- <div class="circle"></div> -->
+
+    <div class="container" id="glasspanel">
+        <!-- <h2 class="seq">Hello everyone</h2>  
+        <p class="seq">Let's go ahead and get this show on the road.</p> -->
+        <!-- <div class="container">
+            <h2>Test</h2>
+            <p>Test</p>
+
+        </div> -->
+        <div class="mainpanel" id="glasspanel">
+            <div class="leftpanel">
+                <div class="welcometext">
+                    <div class="name">
+                        <h1>Arabella </h1>
+                        <h1 class="surname">Minolo</h1>
+                    </div>
+                    <div class="contactblock">
+                        <p class="contacttext"><span class="oi oi-calendar" title="icon name" aria-hidden="true"></span>
+                            24/6/1992</p>
+                        <p class="contacttext"><span class="oi oi-phone" title="icon name" aria-hidden="true"></span>
+                            07751234567</p>
+                        <p class="contacttext"><span class="oi oi-inbox" title="icon name" aria-hidden="true"></span>
+                            aminolo@gmail.com</p>
+                        <p class="contacttext"><span class="oi oi-link-intact" title="icon name"
+                                aria-hidden="true"></span> minolocreations.com</p>
+                    </div>
+                    <p class="copy">Arabella has been designing tattos and chewing gum flavours for the enjoyment of dogs up to and
+                        including the size of a bichon frise. She enjoys cow tipping and skipping stones. She can
+                        usually be found in the halls of her local pool hall, eating the chalk.</p>
+                </div>
+            </div>
+            <div class="rightpanel">
+                <!-- <img class="heroimage" src="Images/image.png" alt=""> -->
+                <div class="textpanel">
+                    <p class="label">24.F.Los Angeles</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="footer">
+    <p class="footertext">Created by Colin Dick</p>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    <script>
+        const glasspanel = document.getElementById('glasspanel');
+
+        const tl = gsap.timeline({ defaults: { ease: "power2.inOut", duration: .5 } })
+
+        tl.from('img', { x: '-10%', opacity: 0 })
+            .from('.container', {
+                width: '120vw', height: '120vh', duration: 1.5,
+                opacity: 0, delay: .5, x: '-20%', y: '-20%', backdropFilter: 'blur(0px)'
+            })
+            .from('.seq', { y: -30, opacity: 0, stagger: .2, duration: .5 }, "-=.5")
+    </script>
+</body>
+
+</html>
